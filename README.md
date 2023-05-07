@@ -22,4 +22,4 @@
 &nbsp;
 
 ## Try it on it's website!
-🌐 https://jacopocasanova98.github.io/JS-Counter
+### 🌐 https://jacopocasanova98.github.io/JS-Counter
