@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Patrick+Hand&family=Titan+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(#ebf4f5, #00458e);
+}
+
+.item-center{
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border-radius: 1em;
+    display: grid;
+    gap: 4.5em;
+    padding: 6em 6em; 
+
+    align-content: space-evenly;
+
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 19.5px );
+    -webkit-backdrop-filter: blur( 19.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.header{
+    font-size: 3.4em;
+    font-family: 'Capriola', sans-serif;
+    color: #28ABFA;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.header:hover{
+    transform: scale(1.1);
+}
+
+span{
+    color: #f7ba2c;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5em;
+}
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.minus{
+    max-width: 3.8em;
+    transition: all 0.5s;
+}
+
+.minus:hover{
+    transform: scale(1.2);
+}
+
+.reset{
+    max-width: 4.8em;
+}
+
+.plus{
+    max-width: 3.8em;
+    transition: all 0.5s;
+}
+
+.plus:hover{
+    transform: scale(1.2);
+}
+
+#counterLabel{
+    text-align: center;
+    font-size: 5em;
+    color: #47354F;
+}
+
+
+@media only screen and (max-width: 765px){
+
+    /*container and items are made a little bit smaller for phone screens*/
+    
+    .container{
+        gap: 4.5em;
+        padding: 3em 3em; 
+    
+        align-content: space-evenly;
+    
+        background: rgba( 255, 255, 255, 0.55 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 19.5px );
+        -webkit-backdrop-filter: blur( 19.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    }
+
+    .header{
+        font-size: 2.4em;
+        font-family: 'Capriola', sans-serif;
+        color: #28ABFA;
+        font-weight: bold;
+    }
+
+    #counterLabel{
+        font-size: 4em;
+    }
+    
+    .minus{
+        max-width: 2.8em;
+    }
+
+    .reset{
+        max-width: 3.8em;
+    }
+
+    .plus{
+        max-width: 2.8em;
+    }
+}
